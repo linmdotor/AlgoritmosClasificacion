@@ -13,25 +13,7 @@ function resultado = procesarDatos(datos)
 fila = 1;
 columna = 1;
 
-datos_aux = datos;
-
-% Cuenta el número de filas y columnas
-while ~isempty(datos_aux)
-  [str, datos_aux] = strtok(datos_aux, "\n");
-  columna = 1;
-  while ~isempty(str)
-    [split, str] = strtok(str, ",");
-    columna = columna+1;
-  end
-  fila = fila+1;
-end
-
-
-resultado = zeros(fila-1,columna-1);
-
 %Genera una matriz con los datos
-fila = 1;
-columna = 1;
 while ~isempty(datos)
 
   [str, datos] = strtok(datos, "\n");
