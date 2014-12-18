@@ -1,1 +1,0 @@
-Color,Forma,Tamano,Clase
