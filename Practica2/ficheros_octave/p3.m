@@ -27,3 +27,8 @@ end
 
 C
 
+
+#función a estimar por máxima verosimilitud
+# f(xi, w) = p(xi/m, C)   -->  w = {m, C}
+
+#funcion(i) = 1 / ( (2*pi)^(d/2) * det(C)^0.5 ) * exp (  -1/2 * ( X(:,i) - m(i) )' * inv(C) *  ( X(:,i) - m(i) ) )
